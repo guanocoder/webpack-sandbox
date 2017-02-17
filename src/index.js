@@ -1,4 +1,4 @@
-const sum = require("./sum");
+import sum from "./sum";
 
 let x = 5;
 let y = 8;

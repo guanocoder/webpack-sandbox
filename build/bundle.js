@@ -73,11 +73,14 @@
 "use strict";
 
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 var sum = function sum(a, b) {
   return a + b;
 };
 
-module.exports = sum;
+exports.default = sum;
 
 /***/ },
 /* 1 */
@@ -86,12 +89,16 @@ module.exports = sum;
 "use strict";
 
 
-var sum = __webpack_require__(0);
+var _sum = __webpack_require__(0);
+
+var _sum2 = _interopRequireDefault(_sum);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var x = 5;
 var y = 8;
 
-console.log("The sum of " + x + " and " + y + " equals to " + sum(x, y));
+console.log("The sum of " + x + " and " + y + " equals to " + (0, _sum2.default)(x, y));
 
 /***/ }
 /******/ ]);
