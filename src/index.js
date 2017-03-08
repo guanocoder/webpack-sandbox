@@ -1,5 +1,5 @@
 import sum from "./sum";
-import './image_viewer';
+import './image_viewer'; // import just for instant execution purpose
 
 let x = 5;
 let y = 8;
