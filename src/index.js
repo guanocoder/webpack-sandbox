@@ -1,7 +1,15 @@
-import sum from "./sum";
-import './image_viewer'; // import just for instant execution purpose
+//import sum from "./sum";
+//import './image_viewer'; // import just for instant execution purpose
+// let x = 5;
+// let y = 8;
+// console.log(`The sum of ${x} and ${y} equals to ${sum(x,y)}`);
 
-let x = 5;
-let y = 8;
+const button = document.createElement('button');
+button.innerText = 'Click me';
+button.onclick = () => {
+    System.import('./image_viewer').then(module => {
+        module.default();
+    });    
+};
 
-console.log(`The sum of ${x} and ${y} equals to ${sum(x,y)}`);
+document.body.appendChild(button);
